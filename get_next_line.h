@@ -24,7 +24,7 @@ char	**ft_split_md(char *str);
 char	*ft_strjoin(char *s1, char *s2);
 int		is_endline(char *str);
 char	*split_end_file(char *str, int len);
-char	*buf_check(int fd, char *str_store, int *flag);
+char	*buf_check(int fd, char **str_store, int *flag);
 char	*end_line_found(char *buf, char **str_store_ptr);
 char	*get_next_line(int fd);
 

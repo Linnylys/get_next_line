@@ -86,47 +86,6 @@ char	**ft_split_md(char *str)
 	return (res);
 }
 
-/*
-char **ft_split_md(char *str)
-{
-	int	i;
-	int	j;
-	int k;
-	char **res;
-
-	i = 0;
-	j = 0;
-	res = malloc(2 *  sizeof(char *));
-	if (res == NULL)
-		return (NULL);
-	while(str[i])
-	{
-		if (str[i] == '\n' && j == 0)
-			j = i + 1;
-		i++;
-	}
-	if (j == 0)
-		j = i;
-	
-	res[0] = malloc((j + 1)* sizeof(char));
-	res[1] = malloc((i - j + 1) * sizeof(char));
-	if (res[0] == NULL || res[1] == NULL)
-		return(NULL);
-	k = 0;
-	res[0][j]='\0';
-	res[1][i - j]='\0';
-	while (str[k])
-	{
-		if (k < j)
-			res[0][k] = str[k];
-		else
-			res[1][k - j] = str[k];
-		k++;
-	}	
-
-	return (res);
-}
-*/
 char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*str;
